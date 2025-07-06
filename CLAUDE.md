@@ -89,7 +89,8 @@ The project includes an MCP (Model Context Protocol) server that exposes the IBM
 - **Input**: 
   - `query` (string): Search query for IBM Cloud documentation
   - `limit` (number, optional): Maximum number of results to return (1-20, default 10)
-- **Output**: JSON array of simplified search results with href, title, and description
+  - `offset` (number, optional): Number of results to skip for pagination (default 0)
+- **Output**: JSON object with results array, total count, offset, and count for pagination
 
 #### `read_documentation`
 - **Description**: Read and convert IBM Cloud documentation page to clean markdown format
