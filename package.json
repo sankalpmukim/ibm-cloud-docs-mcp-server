@@ -3,6 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "mcp": "bun run mcp-server.ts",
+    "test-mcp": "bun run mcp-client.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -10,9 +14,11 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
     "@types/jsdom": "^21.1.7",
     "@types/turndown": "^5.0.5",
     "jsdom": "^26.1.0",
-    "turndown": "^7.2.0"
+    "turndown": "^7.2.0",
+    "zod": "^3.22.4"
   }
 }
